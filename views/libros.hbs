@@ -1,0 +1,31 @@
+<head>
+  <link rel="stylesheet" href="styles/estilo.css" />
+</head>
+<div class="text-center">
+  <h2 class="h1">Pelis</h2>
+<a href="/"class="btn btn-outline-dark">Home</a>
+  <div class="d-flex justify-content-evenly align-items-center flex-wrap">
+      {{#each libros}}
+        <article class="g-col-6">
+          <div class="card" style="width: 18rem; gap:2rem;">
+            <img src={{poster}} class="card-img-top p-2 g-col-6" alt="..." />
+            <div class="card-body p-2 g-col-6">
+              <h5 class="p-2 g-col-6">{{title}}</h5>
+              <p class="card-text p-2 g-col-6">director: {{director}}</p>
+              <p class=""></p>
+              <a href="#" class="btn btn-primary p-2 g-col-6">Ver Película</a>
+            </div>
+          </div>
+          </article>
+      {{/each}}
+    </ul>
+  </div>
+</div>
+
+    {{!-- "title": "The Shawshank Redemption",
+    "year": 1994,
+    "director": "Frank Darabont",
+    "duration": 142,
+    "poster": "https://i.ebayimg.com/images/g/4goAAOSwMyBe7hnQ/s-l1200.webp",
+    "genre": ["Drama"],
+    "rate --}}
